@@ -33,10 +33,6 @@ void Balls::setRadius(int radius) {
     this->radius = radius;
 }
 
-void Balls::setColor(std::string color) {
-    this->color = color;
-}
-
 double Balls::getX() {
     return x;
 }
@@ -55,8 +51,4 @@ double Balls::getSpeedY() {
 
 int Balls::getRadius() {
     return radius;
-}
-
-std::string Balls::getColor() {
-    return color;
 }

@@ -1,5 +1,3 @@
-#include <string>
-
 #pragma once
 #ifndef BALLS_H
 #define BALLS_H
@@ -13,13 +11,11 @@ class Balls {
         void setRadius(int radius);
         void setSpeedX(double speedX);
         void setSpeedY(double speedY);
-        void setColor(std::string color);
         double getX();
         double getY();
         int getRadius();
         double getSpeedX();
         double getSpeedY();
-        std::string getColor();
 
     private:
         double x;
@@ -27,7 +23,6 @@ class Balls {
         int radius;
         double speedX;
         double speedY;
-        std::string color;
 };
 
 #endif

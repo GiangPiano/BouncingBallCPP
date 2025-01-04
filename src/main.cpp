@@ -41,7 +41,7 @@ int main() {
     // balls.push_back(Balls(80, 20, 3, -1, 0));
     // balls.push_back(Balls(120, 20, 8, 1, 0));
     // balls.push_back(Balls(160, 20, 1, -1, 0));
-    int num = 100;
+    int num = 10;
     for (int i = 0; i < num; i++) {
         balls.push_back(Balls(rand() % WIDTH + 1, rand() % HEIGHT - 1, rand() % 10 + 1, rand() % 10 - 5, 0));
     }
@@ -70,7 +70,6 @@ int main() {
             cout << row << endl;
         }
 
-        cout << "Ball 1: " << balls[0].getX() << ", " << HEIGHT - (balls[0].getY() + balls[0].getRadius()) << endl;
         _sleep(50);
         cout << "\033[1;1H";
         // break;
